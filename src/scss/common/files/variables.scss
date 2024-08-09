@@ -1,0 +1,38 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --green-color: #203c3f;
+  --green-2-color: #5c91a3;
+  --green-light-color: #ccdfe5;
+  --green-light-2-color: #e1eef2;
+
+  --blue-light-color: #2788ed;
+  --gold-color: #bf8d55;
+  --gold-hover-color: #e8af70;
+  --sky-color: #badbff;
+  --sky-light-color: #d9ecff;
+  --sky-2-color: #96bde6;
+  --sky-3-color: #88c2ff;
+  --sky-4-color: #e3f1ff;
+  --gray-color: #f4f4f4;
+  --gray-dark-color: #909090;
+
+  --border-color: rgba(92, 81, 81, 0.15);
+  --trs-100: 100ms ease;
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+  --trs-2600: 2600ms ease;
+  --shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+  --shadow-inset: 0px 4px 10px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+$desktop-xl: 2000px;
+$desktop-lg: 1920px;
+$desktop-md: 1440px;
+$desktop-md-2: 1400px;
+$desktop-sm: 1280px;
+$tab: 1024px;
+$tab-md: 992px;
+$tab-sm: 767px;
+$pre-mob: 630px;
+$mob: 500px;

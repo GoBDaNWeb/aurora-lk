@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head/head.component.html', { 'title':'template', })
+  <body>
+    @@include('html/components/header/header.component.html', {})
+    @@include('html/components/mobile-menu/mobile-menu.component.html', {})
+    <main class="fleet-page">
+      @@include('html/components/fleet-hero/fleet-hero.component.html', {})
+
+      <div class="cards-list-wrapper container">
+        <div class="cards-list">
+            <div class="boat-card">
+                <div class="boat-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/1.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/2.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/3.jpg" alt="boat" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="pagination-wrapper">
+                    <div class="pagination-inner">
+                      <div
+                        ref="pagination"
+                        class="pagination pagination-line boat-pagination"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="navigation">
+                    <div class="btns-wrapper">
+                      <button class="boat-prev">
+                        <img src="@img/arrow-v1-left.svg" alt="arrow" />
+                      </button>
+                      <button class="boat-next">
+                        <img src="@img/arrow-v1-right.svg" alt="arrow" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="like">
+                    <button>
+                      <svg
+                        width="34"
+                        height="29"
+                        viewBox="0 0 34 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1 10.0864C1 5.05385 5.04669 1 9.96875 1C12.6406 1 14.9875 2.12377 16.9935 4.23943C18.9748 2.11999 21.3275 1 24.0312 1C28.9533 1 33 5.05385 33 10.0864C33 12.8219 32.2992 14.9082 30.5728 17.0892C28.9062 19.1948 26.2701 21.4019 22.4651 24.4407L22.462 24.4432L18.5651 27.5303C17.645 28.2591 16.355 28.2591 15.4349 27.5303L11.538 24.4432L11.5349 24.4407C7.72987 21.4019 5.09382 19.1948 3.42719 17.0892C1.70076 14.9082 1 12.8219 1 10.0864Z"
+                          fill="white"
+                          stroke="#BF8D55"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="badges">
+                    <div class="badge">Хит</div>
+                    <div class="badge">Скидка</div>
+                  </div>
+                </div>
+      
+                <div class="content">
+                  <a href="#">
+                    <p class="price">25 000 <span>₽ / час</span></p>
+                    <h5>
+                      Veneto — Прогулочный <br />
+                      катер-лимузин
+                    </h5>
+                    <span class="guests">До 10 гостей</span>
+                    <ul>
+                      <li>
+                        <span>Причал</span>
+                        <p>Ждановская наб., 2А</p>
+                      </li>
+                      <li>
+                        <span>Маршрут</span>
+                        <p>
+                          Реки и каналы, Нева, Малая и большая Невка, Финский залив
+                        </p>
+                      </li>
+                    </ul>
+                  </a>
+      
+                  <div class="btns">
+                    <button class="outline"><a href="#">Подробнее</a></button>
+                    <button class="primary open-order-form">Забронировать</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="boat-card">
+                <div class="boat-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/1.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/2.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/3.jpg" alt="boat" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="pagination-wrapper">
+                    <div class="pagination-inner">
+                      <div
+                        ref="pagination"
+                        class="pagination pagination-line boat-pagination"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="navigation">
+                    <div class="btns-wrapper">
+                      <button class="boat-prev">
+                        <img src="@img/arrow-v1-left.svg" alt="arrow" />
+                      </button>
+                      <button class="boat-next">
+                        <img src="@img/arrow-v1-right.svg" alt="arrow" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="like">
+                    <button>
+                      <svg
+                        width="34"
+                        height="29"
+                        viewBox="0 0 34 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1 10.0864C1 5.05385 5.04669 1 9.96875 1C12.6406 1 14.9875 2.12377 16.9935 4.23943C18.9748 2.11999 21.3275 1 24.0312 1C28.9533 1 33 5.05385 33 10.0864C33 12.8219 32.2992 14.9082 30.5728 17.0892C28.9062 19.1948 26.2701 21.4019 22.4651 24.4407L22.462 24.4432L18.5651 27.5303C17.645 28.2591 16.355 28.2591 15.4349 27.5303L11.538 24.4432L11.5349 24.4407C7.72987 21.4019 5.09382 19.1948 3.42719 17.0892C1.70076 14.9082 1 12.8219 1 10.0864Z"
+                          fill="white"
+                          stroke="#BF8D55"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="badges">
+                    <div class="badge">Хит</div>
+                    <div class="badge">Скидка</div>
+                  </div>
+                </div>
+      
+                <div class="content">
+                  <a href="#">
+                    <p class="price">25 000 <span>₽ / час</span></p>
+                    <h5>
+                      Veneto — Прогулочный <br />
+                      катер-лимузин
+                    </h5>
+                    <span class="guests">До 10 гостей</span>
+                    <ul>
+                      <li>
+                        <span>Причал</span>
+                        <p>Ждановская наб., 2А</p>
+                      </li>
+                      <li>
+                        <span>Маршрут</span>
+                        <p>
+                          Реки и каналы, Нева, Малая и большая Невка, Финский залив
+                        </p>
+                      </li>
+                    </ul>
+                  </a>
+      
+                  <div class="btns">
+                    <button class="outline"><a href="#">Подробнее</a></button>
+                    <button class="primary open-order-form">Забронировать</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="boat-card">
+                <div class="boat-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/1.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/2.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/3.jpg" alt="boat" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="pagination-wrapper">
+                    <div class="pagination-inner">
+                      <div
+                        ref="pagination"
+                        class="pagination pagination-line boat-pagination"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="navigation">
+                    <div class="btns-wrapper">
+                      <button class="boat-prev">
+                        <img src="@img/arrow-v1-left.svg" alt="arrow" />
+                      </button>
+                      <button class="boat-next">
+                        <img src="@img/arrow-v1-right.svg" alt="arrow" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="like">
+                    <button>
+                      <svg
+                        width="34"
+                        height="29"
+                        viewBox="0 0 34 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1 10.0864C1 5.05385 5.04669 1 9.96875 1C12.6406 1 14.9875 2.12377 16.9935 4.23943C18.9748 2.11999 21.3275 1 24.0312 1C28.9533 1 33 5.05385 33 10.0864C33 12.8219 32.2992 14.9082 30.5728 17.0892C28.9062 19.1948 26.2701 21.4019 22.4651 24.4407L22.462 24.4432L18.5651 27.5303C17.645 28.2591 16.355 28.2591 15.4349 27.5303L11.538 24.4432L11.5349 24.4407C7.72987 21.4019 5.09382 19.1948 3.42719 17.0892C1.70076 14.9082 1 12.8219 1 10.0864Z"
+                          fill="white"
+                          stroke="#BF8D55"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="badges">
+                    <div class="badge">Хит</div>
+                    <div class="badge">Скидка</div>
+                  </div>
+                </div>
+      
+                <div class="content">
+                  <a href="#">
+                    <p class="price">25 000 <span>₽ / час</span></p>
+                    <h5>
+                      Veneto — Прогулочный <br />
+                      катер-лимузин
+                    </h5>
+                    <span class="guests">До 10 гостей</span>
+                    <ul>
+                      <li>
+                        <span>Причал</span>
+                        <p>Ждановская наб., 2А</p>
+                      </li>
+                      <li>
+                        <span>Маршрут</span>
+                        <p>
+                          Реки и каналы, Нева, Малая и большая Невка, Финский залив
+                        </p>
+                      </li>
+                    </ul>
+                  </a>
+      
+                  <div class="btns">
+                    <button class="outline"><a href="#">Подробнее</a></button>
+                    <button class="primary open-order-form">Забронировать</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="boat-card">
+                <div class="boat-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/1.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/2.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/3.jpg" alt="boat" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="pagination-wrapper">
+                    <div class="pagination-inner">
+                      <div
+                        ref="pagination"
+                        class="pagination pagination-line boat-pagination"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="navigation">
+                    <div class="btns-wrapper">
+                      <button class="boat-prev">
+                        <img src="@img/arrow-v1-left.svg" alt="arrow" />
+                      </button>
+                      <button class="boat-next">
+                        <img src="@img/arrow-v1-right.svg" alt="arrow" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="like">
+                    <button>
+                      <svg
+                        width="34"
+                        height="29"
+                        viewBox="0 0 34 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1 10.0864C1 5.05385 5.04669 1 9.96875 1C12.6406 1 14.9875 2.12377 16.9935 4.23943C18.9748 2.11999 21.3275 1 24.0312 1C28.9533 1 33 5.05385 33 10.0864C33 12.8219 32.2992 14.9082 30.5728 17.0892C28.9062 19.1948 26.2701 21.4019 22.4651 24.4407L22.462 24.4432L18.5651 27.5303C17.645 28.2591 16.355 28.2591 15.4349 27.5303L11.538 24.4432L11.5349 24.4407C7.72987 21.4019 5.09382 19.1948 3.42719 17.0892C1.70076 14.9082 1 12.8219 1 10.0864Z"
+                          fill="white"
+                          stroke="#BF8D55"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="badges">
+                    <div class="badge">Хит</div>
+                    <div class="badge">Скидка</div>
+                  </div>
+                </div>
+      
+                <div class="content">
+                  <a href="#">
+                    <p class="price">25 000 <span>₽ / час</span></p>
+                    <h5>
+                      Veneto — Прогулочный <br />
+                      катер-лимузин
+                    </h5>
+                    <span class="guests">До 10 гостей</span>
+                    <ul>
+                      <li>
+                        <span>Причал</span>
+                        <p>Ждановская наб., 2А</p>
+                      </li>
+                      <li>
+                        <span>Маршрут</span>
+                        <p>
+                          Реки и каналы, Нева, Малая и большая Невка, Финский залив
+                        </p>
+                      </li>
+                    </ul>
+                  </a>
+      
+                  <div class="btns">
+                    <button class="outline"><a href="#">Подробнее</a></button>
+                    <button class="primary open-order-form">Забронировать</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="boat-card">
+                <div class="boat-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/1.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/2.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/3.jpg" alt="boat" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="pagination-wrapper">
+                    <div class="pagination-inner">
+                      <div
+                        ref="pagination"
+                        class="pagination pagination-line boat-pagination"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="navigation">
+                    <div class="btns-wrapper">
+                      <button class="boat-prev">
+                        <img src="@img/arrow-v1-left.svg" alt="arrow" />
+                      </button>
+                      <button class="boat-next">
+                        <img src="@img/arrow-v1-right.svg" alt="arrow" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="like">
+                    <button>
+                      <svg
+                        width="34"
+                        height="29"
+                        viewBox="0 0 34 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1 10.0864C1 5.05385 5.04669 1 9.96875 1C12.6406 1 14.9875 2.12377 16.9935 4.23943C18.9748 2.11999 21.3275 1 24.0312 1C28.9533 1 33 5.05385 33 10.0864C33 12.8219 32.2992 14.9082 30.5728 17.0892C28.9062 19.1948 26.2701 21.4019 22.4651 24.4407L22.462 24.4432L18.5651 27.5303C17.645 28.2591 16.355 28.2591 15.4349 27.5303L11.538 24.4432L11.5349 24.4407C7.72987 21.4019 5.09382 19.1948 3.42719 17.0892C1.70076 14.9082 1 12.8219 1 10.0864Z"
+                          fill="white"
+                          stroke="#BF8D55"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="badges">
+                    <div class="badge">Хит</div>
+                    <div class="badge">Скидка</div>
+                  </div>
+                </div>
+      
+                <div class="content">
+                  <a href="#">
+                    <p class="price">25 000 <span>₽ / час</span></p>
+                    <h5>
+                      Veneto — Прогулочный <br />
+                      катер-лимузин
+                    </h5>
+                    <span class="guests">До 10 гостей</span>
+                    <ul>
+                      <li>
+                        <span>Причал</span>
+                        <p>Ждановская наб., 2А</p>
+                      </li>
+                      <li>
+                        <span>Маршрут</span>
+                        <p>
+                          Реки и каналы, Нева, Малая и большая Невка, Финский залив
+                        </p>
+                      </li>
+                    </ul>
+                  </a>
+      
+                  <div class="btns">
+                    <button class="outline"><a href="#">Подробнее</a></button>
+                    <button class="primary open-order-form">Забронировать</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="boat-card">
+                <div class="boat-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/1.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/2.jpg" alt="boat" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="image-wrapper">
+                        <img src="@img/boats/3.jpg" alt="boat" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="pagination-wrapper">
+                    <div class="pagination-inner">
+                      <div
+                        ref="pagination"
+                        class="pagination pagination-line boat-pagination"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="navigation">
+                    <div class="btns-wrapper">
+                      <button class="boat-prev">
+                        <img src="@img/arrow-v1-left.svg" alt="arrow" />
+                      </button>
+                      <button class="boat-next">
+                        <img src="@img/arrow-v1-right.svg" alt="arrow" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="like">
+                    <button>
+                      <svg
+                        width="34"
+                        height="29"
+                        viewBox="0 0 34 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1 10.0864C1 5.05385 5.04669 1 9.96875 1C12.6406 1 14.9875 2.12377 16.9935 4.23943C18.9748 2.11999 21.3275 1 24.0312 1C28.9533 1 33 5.05385 33 10.0864C33 12.8219 32.2992 14.9082 30.5728 17.0892C28.9062 19.1948 26.2701 21.4019 22.4651 24.4407L22.462 24.4432L18.5651 27.5303C17.645 28.2591 16.355 28.2591 15.4349 27.5303L11.538 24.4432L11.5349 24.4407C7.72987 21.4019 5.09382 19.1948 3.42719 17.0892C1.70076 14.9082 1 12.8219 1 10.0864Z"
+                          fill="white"
+                          stroke="#BF8D55"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="badges">
+                    <div class="badge">Хит</div>
+                    <div class="badge">Скидка</div>
+                  </div>
+                </div>
+      
+                <div class="content">
+                  <a href="#">
+                    <p class="price">25 000 <span>₽ / час</span></p>
+                    <h5>
+                      Veneto — Прогулочный <br />
+                      катер-лимузин
+                    </h5>
+                    <span class="guests">До 10 гостей</span>
+                    <ul>
+                      <li>
+                        <span>Причал</span>
+                        <p>Ждановская наб., 2А</p>
+                      </li>
+                      <li>
+                        <span>Маршрут</span>
+                        <p>
+                          Реки и каналы, Нева, Малая и большая Невка, Финский залив
+                        </p>
+                      </li>
+                    </ul>
+                  </a>
+      
+                  <div class="btns">
+                    <button class="outline"><a href="#">Подробнее</a></button>
+                    <button class="primary open-order-form">Забронировать</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div data-v-0fec4db0="" class="btn-wrapper">
+          <button data-v-0fec4db0="" class="secondary">Загрузить ещё</button>
+        </div>
+      </div>
+    </main>
+    @@include('html/components/footer/footer.component.html', {})
+
+    <div class="order-modal" id="orderPopup">
+      <div class="order-modal-content">
+        <button  class="close-btn">
+          <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.00024 6L18.7282 18.7279" stroke="#072348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M6.00024 19L18.7282 6.27208" stroke="#072348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <h4  class="title-h4">Забронировать</h4>
+        <div  class="inputs">
+          <input   class="input" type="text" placeholder="Имя">
+          <input   class="input input__valid-phone" type="text" placeholder="Телефон">
+          <input type="email" class="input" placeholder="Почта">
+          <label class="basic-checkbox">
+            <input type="checkbox">
+            <span>Согласен с политикой конфиденциальности</span>
+          </label>
+          <button  class="primary">Отправить</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

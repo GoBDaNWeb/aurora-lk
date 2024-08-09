@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head/head.component.html', { 'title':'template', })
+  <body>
+    @@include('html/components/header/header.component.html', {})
+    @@include('html/components/mobile-menu/mobile-menu.component.html', {})
+    <main class="about-page">
+        <div class="about-hero container">
+            <h3>О компании</h3>
+            <div class="hero-content">
+                <div class="image-wrapper">
+                    <img src="img/about/hero.jpg" alt="image" />
+                </div>
+                <div class="text">
+                    <p>
+                        Аврора Yachts предлагает эксклюзивные водные путешествия на яхтах и катерах, предоставляя
+                        возможность каждому клиенту почувствовать себя особенным. Наш флот состоит из современных
+                        и хорошо оборудованных судов, обеспечивающих комфорт и безопасность во время каждого
+                        путешествия. Мы гордимся нашей внимательностью к деталям и стремлению к совершенству, что
+                        позволяет нам создавать незабываемые впечатления для наших гостей.
+                    </p>
+                    <div class="adventures">
+                        <div class="adventure-item">
+                            <span>6</span>
+                            <p>Пояснение цифры</p>
+                        </div>
+                        <div class="adventure-item">
+                            <span>50%</span>
+                            <p>Пояснение цифры</p>
+                        </div>
+                        <div class="adventure-item">
+                            <span>100+</span>
+                            <p>Пояснение цифры</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-info">
+            <div class="about-info-inner container">
+                <div class="about-info-item">
+                    <h4>Миссия</h4>
+                    <p>
+                        Маршрут начинается у Патриаршего моста и ведет мимо Кремля, Парка Горького, до Москва-Сити
+                        и обратно. Во время круиза гости могут наслаждаться комфортом на борту и красивыми видами
+                        городской архитектуры.
+                    </p>
+                </div>
+                <div class="about-info-item">
+                    <h4>Наша команда</h4>
+                    <p>
+                        Маршрут начинается у Патриаршего моста и ведет мимо Кремля, Парка Горького, до Москва-Сити
+                        и обратно. Во время круиза гости могут наслаждаться комфортом на борту и красивыми видами
+                        городской архитектуры.
+                    </p>
+                </div>
+                <div class="image-wrapper">
+                    <img src="img/logo-sm-2.png" alt="" />
+                </div>
+            </div>
+        </div>
+
+        @@include('html/components/contacts/contacts.component.html', {})
+    </main>
+    @@include('html/components/footer/footer.component.html', {})
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

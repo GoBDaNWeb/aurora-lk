@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head/head.component.html', { 'title':'template', })
+  <body>
+    @@include('html/components/header/header-lk.component.html', {})
+    @@include('html/components/mobile-menu/mobile-menu.component.html', {})
+    <main>
+        <div class="container">
+          <h2 class="lk-title">Текущие заявки</h2>
+          <div class="lk">
+            @@include('html/components/user-info/user-info.component.html', {})
+            <h2 class="lk-title lk-title-mob">Текущие заявки</h2>
+            @@include('html/components/empty-orders/empty-orders.component.html', {})
+          </div>
+        </div>
+    </main>
+    @@include('html/components/footer/footer.component.html', {})
+
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

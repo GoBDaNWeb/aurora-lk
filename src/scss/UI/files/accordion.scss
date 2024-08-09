@@ -1,0 +1,96 @@
+@import "../../common/files/variables.scss";
+
+.accordion-item.active {
+  .accordion-title {
+    .icon-wrapper {
+      .icon {
+        &:after {
+          height: 0;
+        }
+      }
+    }
+  }
+}
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: var(--trs-300);
+
+  .accordion-title {
+    cursor: url("../images/cursor-pointer.png"), auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 21px 25px;
+    border-radius: 8px;
+    background: var(--green-light-color);
+    transition: var(--trs-300);
+    @media (max-width: $tab) {
+      gap: 15px;
+    }
+    .icon-wrapper {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      min-height: 40px;
+      max-width: 40px;
+      max-height: 40px;
+      background: var(--white-color);
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      @media (max-width: $tab) {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+        min-height: 35px;
+        max-width: 35px;
+        max-height: 35px;
+      }
+      .icon {
+        display: block;
+        width: 19px;
+        height: 2px;
+        background: var(--sky-color);
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          height: 19px;
+          width: 2px;
+          background: var(--sky-color);
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          transition: var(--trs-300);
+        }
+      }
+    }
+    p {
+      color: var(--black-color);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      transition: var(--trs-300);
+    }
+  }
+  .collapse {
+    transition: var(--trs-300);
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 20px;
+      background: var(--green-light-2-color);
+      padding: 25px;
+      border-radius: 8px;
+    }
+  }
+}

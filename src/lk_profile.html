@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head/head.component.html', { 'title':'template', })
+  <body>
+    @@include('html/components/header/header.component.html', {})
+    @@include('html/components/mobile-menu/mobile-menu.component.html', {})
+    <main>
+      <div class="container">
+        <h2 class="lk-title">Профиль</h2>
+        <div class="lk">
+          @@include('html/components/user-info/user-info.component.html', {})
+          <h2 class="lk-title lk-title-mob">Профиль</h2>
+          @@include('html/components/profile/profile.component.html', {})
+        </div>
+      </div>
+    </main>
+    @@include('html/components/footer/footer.component.html', {})
+    <div class="order-modal" id="chooseFleetPopup">
+      <div class="order-modal-content">
+        <button class="close-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.00024 6L18.7282 18.7279"
+              stroke="#072348"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M6.00024 19L18.7282 6.27208"
+              stroke="#072348"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </button>
+        <h4 class="title-h4">Подобрать судно</h4>
+        <div class="inputs">
+          <input class="input" type="text" placeholder="Имя" />
+          <input class="input" type="text" placeholder="Бюджет" />
+          <input
+            class="input input__valid-phone"
+            type="text"
+            placeholder="Телефон"
+          />
+          <input type="text" class="input date-input2" placeholder="Дата" />
+          <input class="input" type="number" placeholder="Кол-во персон" />
+          <button class="primary">Отправить</button>
+        </div>
+      </div>
+    </div>
+    <div class="change-password-modal">
+      <div class="change-password-modal-content">
+        <button class="close-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.00024 6L18.7282 18.7279"
+              stroke="#072348"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M6.00024 19L18.7282 6.27208"
+              stroke="#072348"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </button>
+        <h4 class="title-h4">Изменить код-пароль</h4>
+        <div class="inputs">
+          <input
+            class="input"
+            type="password"
+            placeholder="Введите старый пароль"
+          />
+          <input
+            class="input"
+            type="password"
+            placeholder="Введите новый пароль"
+          />
+          <input
+            class="input"
+            type="password"
+            placeholder="Повторите новый пароль"
+          />
+          <a href="#">Забыли пароль?</a>
+          <button class="primary">Сохранить</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

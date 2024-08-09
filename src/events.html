@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head/head.component.html', { 'title':'template', })
+  <body>
+    @@include('html/components/header/header.component.html', {})
+    @@include('html/components/mobile-menu/mobile-menu.component.html', {})
+    <main class="events-page tabs-wrapper">
+        <div class="events-hero container">
+            <h3>Мероприятия</h3>
+            <div class="tabs-wrapper">
+                <div class="tabs">
+                    <button class="tab active" data-tab="1">Частные</button>
+                    <button class="tab" data-tab="2">Корпоративные</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cards-list-wrapper container">
+            <div class="cards-list">
+                <div class="event-card-wrapper tab-content" data-tab-content="1 ">
+                    <div class="event-card-swiper-wrapper">
+                      <div class="event-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="#" class="image-wrapper">
+                              <img src="@img/events/1.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="image-wrapper">
+                              <img src="@img/events/2.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="image-wrapper">
+                              <img src="@img/events/3.jpg" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="pagination-wrapper">
+                          <div class="pagination-inner">
+                            <div
+                              ref="pagination"
+                              class="pagination pagination-line event-pagination"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="navigation">
+                          <div class="btns-wrapper">
+                            <button class="event-prev">
+                              <img src="@img/arrow-v1-left.svg" alt="arrow" />
+                            </button>
+                            <button class="event-next">
+                              <img src="@img/arrow-v1-right.svg" alt="arrow" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <a href="#" class="content">
+                      <h4>День рождения</h4>
+                      <p>
+                        Отметьте свой праздник на борту роскошной яхты с кейтерингом
+                        высшего класса и персональным обслуживанием
+                      </p>
+                      <button class="outline">Подробнее</button>
+                    </a>
+                  </div>
+
+                  <div class="event-card-wrapper tab-content" data-tab-content="2 ">
+                    <div class="event-card-swiper-wrapper">
+                      <div class="event-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="#" class="image-wrapper">
+                              <img src="@img/events/1.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="image-wrapper">
+                              <img src="@img/events/2.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="image-wrapper">
+                              <img src="@img/events/3.jpg" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="pagination-wrapper">
+                          <div class="pagination-inner">
+                            <div
+                              ref="pagination"
+                              class="pagination pagination-line event-pagination"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="navigation">
+                          <div class="btns-wrapper">
+                            <button class="event-prev">
+                              <img src="@img/arrow-v1-left.svg" alt="arrow" />
+                            </button>
+                            <button class="event-next">
+                              <img src="@img/arrow-v1-right.svg" alt="arrow" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <a href="#" class="content">
+                      <h4>Что-то ещё</h4>
+                      <p>
+                        Отметьте свой праздник на борту роскошной яхты с кейтерингом
+                        высшего класса и персональным обслуживанием
+                      </p>
+                      <button class="outline">Подробнее</button>
+                    </a>
+                  </div>
+
+                  <div class="event-card-wrapper tab-content" data-tab-content="1 ">
+                    <div class="event-card-swiper-wrapper">
+                      <div class="event-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="#" class="image-wrapper">
+                              <img src="@img/events/1.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="image-wrapper">
+                              <img src="@img/events/2.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="image-wrapper">
+                              <img src="@img/events/3.jpg" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="pagination-wrapper">
+                          <div class="pagination-inner">
+                            <div
+                              ref="pagination"
+                              class="pagination pagination-line event-pagination"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="navigation">
+                          <div class="btns-wrapper">
+                            <button class="event-prev">
+                              <img src="@img/arrow-v1-left.svg" alt="arrow" />
+                            </button>
+                            <button class="event-next">
+                              <img src="@img/arrow-v1-right.svg" alt="arrow" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <a href="#" class="content">
+                      <h4>День рождения</h4>
+                      <p>
+                        Отметьте свой праздник на борту роскошной яхты с кейтерингом
+                        высшего класса и персональным обслуживанием
+                      </p>
+                      <button class="outline">Подробнее</button>
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/components/footer/footer.component.html', {})
+
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

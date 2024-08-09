@@ -1,0 +1,130 @@
+@import "../../common/files/variables.scss";
+
+.home-routes {
+  margin-top: 105px;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: $tab) {
+    margin-top: 60px;
+  }
+  .home-routes-swiper {
+    margin-top: 60px;
+    @media (max-width: $tab) {
+      margin-top: 30px;
+    }
+    .swiper-slide {
+      opacity: 0 !important;
+      transition: var(--trs-600);
+      @media (max-width: $tab-sm) {
+        opacity: 1 !important;
+      }
+    }
+    .swiper-slide-active {
+      opacity: 1 !important;
+    }
+  }
+  .route-about-card {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 45px;
+    @media (max-width: $tab) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .left {
+      .image-wrapper {
+        padding-bottom: 65%;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        @media (max-width: $tab) {
+          padding-bottom: 50%;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .right {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr;
+      gap: 50px;
+      @media (max-width: $tab) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: $tab-sm) {
+        grid-template-columns: 1fr;
+      }
+      .text {
+        min-width: 226px;
+        h4 {
+          text-align: left;
+          text-transform: none;
+        }
+        p {
+          margin-top: 15px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          @media (max-width: $tab) {
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+        button {
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+      .image-wrapper {
+        padding-bottom: 85%;
+        position: relative;
+        @media (max-width: $tab-sm) {
+          display: none;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .border {
+    margin-top: 37px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @media (max-width: $tab) {
+      display: none;
+    }
+    img {
+      margin-right: 100px;
+    }
+  }
+  .navigaion-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+    margin-top: 42px;
+
+    button.swiper-button-disabled {
+      opacity: 0;
+    }
+    button {
+      transition: var(--trs-300);
+      @media (max-width: $tab) {
+        display: none;
+      }
+      img {
+        width: 58px;
+      }
+    }
+  }
+}

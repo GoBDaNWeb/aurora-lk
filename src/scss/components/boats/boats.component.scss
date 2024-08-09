@@ -1,0 +1,33 @@
+@import "../../common/files/variables.scss";
+
+.boats {
+  margin-top: 100px;
+  overflow: hidden;
+
+  @media (max-width: $tab) {
+    margin-top: 65px;
+  }
+  .tabs-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    @media (max-width: $tab) {
+      margin-top: 27px;
+    }
+    .tabs {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      display: flex;
+      gap: 40px;
+    }
+  }
+  .boats-swiper {
+    margin-top: 60px;
+    overflow: hidden;
+    @media (max-width: $tab) {
+      margin-top: 32px;
+    }
+  }
+  .swiper-pagination {
+    margin-top: 30px;
+  }
+}
